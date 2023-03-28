@@ -1,0 +1,26 @@
+Employee Details
+<div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>empName</th>
+                <th>empAge</th>
+                <th>empAddress</th>
+                <th>empDepartment</th>
+                <th>empRole</th>
+            </tr>
+          
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of (response|async)">
+                <td>{{item.id}}</td>
+                <td>{{item.empName}}</td>
+                <td>{{item.empAge}}</td>
+                <td>{{item.empAddress}}</td>
+                <td>{{item.empDepartment}}</td>
+                <td>{{item.empRole}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
